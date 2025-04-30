@@ -1,0 +1,123 @@
+.login-container {
+  min-height: 100vh;
+  background-color: #1f2937; /* gray-900 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.login-box {
+  display: flex;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.login-left {
+  flex: 1;
+  background-color: #7e22ce; /* purple-700 */
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-left h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.login-left p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-button {
+  border: 2px solid white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: white;
+  color: #7e22ce;
+}
+
+.login-right {
+  flex: 1;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.login-right h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #7e22ce;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #4b5563; /* gray-600 */
+}
+
+.input-group input {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db; /* gray-300 */
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #7e22ce;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.submit-button {
+  background-color: #7e22ce;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #6b21a8;
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

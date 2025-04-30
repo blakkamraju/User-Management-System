@@ -1,0 +1,195 @@
+/* UserProfile.css */
+
+.update-info-button {
+  color: #d1d5db;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 10px 0px;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.update-info-button:hover{
+  cursor: pointer;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-profile-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-icon-container {
+  background-color: rgba(75, 85, 99, 0.6);
+  padding: 1rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-icon-container:hover {
+  transform: scale(1.1);
+}
+
+.profile-icon {
+  color: white;
+}
+
+.profile-name {
+  margin-top: 1rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.user-info {
+  margin-top: 2rem;
+  color: #d1d5db;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.info-item:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.info-text {
+  word-wrap: break-word;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .profile-name {
+    font-size: 1.5rem;
+  }
+
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-info {
+    font-size: 0.9rem;
+  }
+}
+
+.update-info-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.update-info-button:hover {
+  background-color: #357ab7;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Popup Content */
+.popup-content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  border-radius: 10px;
+  padding: 40px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.popup-content h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.popup-content label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.popup-actions button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-actions button:hover {
+  background-color: #357ab7;
+}
+
+.popup-actions button[type="button"] {
+  background-color: #e74c3c;
+}
+
+.popup-actions button[type="button"]:hover {
+  background-color: #c0392b;
+} 
